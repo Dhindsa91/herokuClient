@@ -21,7 +21,7 @@ export default function Register(props) {
         if(repassword !== password) return setMsg("Passwords do not match");
 
 
-        axios.post("http://localhost:3001/register", 
+        axios.post("https://whispering-mesa-15627.herokuapp.com/register", 
         {
             username,
             password

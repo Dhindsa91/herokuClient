@@ -35,7 +35,7 @@ export default function Index() {
       axios({
         headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
         method: 'get',
-        url: `http://localhost:3001/get-posts/${user}`
+        url: `https://whispering-mesa-15627.herokuapp.com/get-posts/${user}`
       })
       .then(response => {
   
@@ -64,7 +64,7 @@ export default function Index() {
       return await axios({
         headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
         method: 'post',
-        url: `http://localhost:3001/create-post`,
+        url: `https://whispering-mesa-15627.herokuapp.com/create-post`,
         data: {
           description,
           dueDate,
@@ -79,7 +79,7 @@ export default function Index() {
             axios({
               headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
               method: 'get',
-              url: `http://localhost:3001/get-posts/${user}`
+              url: `https://whispering-mesa-15627.herokuapp.com/get-posts/${user}`
             })
             .then(response => {
         
