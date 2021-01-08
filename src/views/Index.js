@@ -36,6 +36,7 @@ export default function Index() {
         headers: { Authorization: `Bearer ${localStorage.getItem('token')}` },
         method: 'get',
         url: `https://whispering-mesa-15627.herokuapp.com/get-posts/${user}`
+      
       })
       .then(response => {
   

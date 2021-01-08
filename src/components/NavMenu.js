@@ -20,7 +20,7 @@ export default function NavMenu(props) {
     return (
         <header className="app-header">
           
-                <Link className="link" to="/"><h3 className="app-heading">Launchtrip Assignment - Arvind Dhindsa</h3></Link>
+                <Link className="link" to="/"><h3 className="app-heading">Launchtrip Assignment : Arvind Dhindsa</h3></Link>
             {user ? 
             (
                 <button className="btn btn-secondary" onClick={handleLogOut} >Logout</button>
